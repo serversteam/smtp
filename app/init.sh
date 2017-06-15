@@ -17,7 +17,7 @@ service sendmail start
 
 #useradd -ms /bin/bash sertone
 #echo "sertone:Eed6quaeboh8aiQuneeGu7ah" | /usr/sbin/chpasswd
-/bin/bash
+#/bin/bash
 
-#touch /var/log/syslog
-#tailf /var/log/syslog
+touch /var/log/syslog
+tailf /var/log/syslog
