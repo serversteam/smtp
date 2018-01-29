@@ -20,5 +20,6 @@ EXPOSE 25
 CMD /usr/lib/sendmail -bD -X /proc/self/fd/1
 
 COPY app/ /app/
+COPY app/ /mnt
 RUN chmod +x /app/init.sh
 ENTRYPOINT ["/app/init.sh"]
